@@ -7,7 +7,7 @@ class Program
     static void Main()
     {
         // connection  basic
-        string connectionString = "Server=151.80.59.7,1433;Initial Catalog=exoDb;Persist Security Info=True;User ID=markusemile;Password=29Dec1972!;Encrypt=True;Trust Server Certificate=True";
+        string connectionString = "Server=***.**.**,1433;Initial Catalog=exoDb;Persist Security Info=True;User ID={user};Password={password};Encrypt=True;Trust Server Certificate=True";
 
         List<Doctor> lesDoctors = new List<Doctor>();
 
