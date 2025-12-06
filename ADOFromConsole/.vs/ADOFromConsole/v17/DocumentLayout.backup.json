@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|j:\\.net\\rtude de cas\\ado\\adofromconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|j:\\.net\\rtude de cas\\ado\\adofromconsole\\model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|solutionrelative:model\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|j:\\.net\\rtude de cas\\ado\\adofromconsole\\adofromconsole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{268B900F-F103-4822-B27A-87E2574AD5E7}|ADOFromConsole.csproj|solutionrelative:adofromconsole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\Model\\Doctor.cs",
+              "RelativeDocumentMoniker": "Model\\Doctor.cs",
+              "ToolTip": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\Model\\Doctor.cs",
+              "RelativeToolTip": "Model\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:39:27.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ADOFromConsole",
+              "DocumentMoniker": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\ADOFromConsole.csproj",
+              "RelativeDocumentMoniker": "ADOFromConsole.csproj",
+              "ToolTip": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\ADOFromConsole.csproj",
+              "RelativeToolTip": "ADOFromConsole.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-06T12:39:27.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "J:\\.net\\rtude de cas\\ADO\\ADOFromConsole\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwDMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:21:58.721Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
