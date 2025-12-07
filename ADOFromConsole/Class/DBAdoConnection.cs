@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System.Collections;
 using DotNetEnv;
 using System.Text.RegularExpressions;
 using Microsoft.Data.SqlClient;
@@ -96,7 +95,29 @@ namespace ADOFromConsole.Configuration
 
         #region ExecuteReader
         // return a IEnumerable
-        public IEnumerable<T> ExecuteReader<T>(DbAdoCommand command,Func<IDataRecord, T> mapper)
+        public  IEnumerable<T> ExecuteReader<T>(DbAdoCommand command, Func<IDataRecord, T> mapper)
+        {
+            if (command == null) throw new ArgumentNullException(nameof(command));
+            if (mapper == null) throw new ArgumentNullException(nameof(mapper));
+
+            var dbCommand = command.GetDbCommand();
+            dbCommand.Connection = _dbconnection;
+
+            try
+            {
+                Open();
+                using var reader =  dbCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    yield return mapper(reader);
+                }
+            }
+            finally { Close(); }
+        }
+        #endregion
+
+        #region ExecuteReaderAsync
+        public async IAsyncEnumerable<T> ExecuteReaderAsync<T>(DbAdoCommand command,Func<IDataRecord, T> mapper)
         {
             if(command == null) throw new ArgumentNullException(nameof(command));
             if(mapper == null) throw new ArgumentNullException(nameof(mapper));
@@ -107,7 +128,7 @@ namespace ADOFromConsole.Configuration
             try
             {
                 Open();
-                using var reader = dbCommand.ExecuteReader();
+                using var reader = await dbCommand.ExecuteReaderAsync();
                 while (reader.Read())
                 {
                     yield return mapper(reader);
@@ -115,6 +136,7 @@ namespace ADOFromConsole.Configuration
             }finally { Close(); }
         }
         #endregion
+
 
         #region GetDataTable
         public DataTable GetDataTable(DbAdoCommand command)

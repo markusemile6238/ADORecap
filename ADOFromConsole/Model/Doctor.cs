@@ -9,12 +9,16 @@ namespace ADOFromConsole.Model
 {
     public class Doctor
     {
-        public int Id { get; set; }
-        public string Ref { get; set; }
+        public int? Id { get; set; }
+        public string? Ref { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public string Service { get; set; }
 
+        public Doctor()
+        {
+
+        }
         public Doctor(int id, string @ref, string firstname, string lastname, string service)
         {
             Id = id;
@@ -23,8 +27,6 @@ namespace ADOFromConsole.Model
             Lastname = lastname;
             Service = service;
         }
-
-       
 
     }
 }
